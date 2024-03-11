@@ -43,17 +43,60 @@
                 <td id="relleno" colspan="2"><img class="imagen" src="logos/stanlee.jpg" alt="" ></td>
             </tr>
         </table>
-        <br><br>
-        <table>
-            <tr>
-                <td>HOla </td>
-                <td>Caracola</td>
-            </tr>
-            <tr>
-                <td>Adiós</td>
-                <td>Con el corazón</td>
-            </tr>
+        <br>
+        <br>
+        <!-- Para enviarla a BBDD seria: basededatos.php -->
+        <form action="mailto:raul.rodrigez@proeducaglobal.es" method="post" name="formulario" id="formulario">
+            <!--El name sería para usarlo en javascript.
+                 El id sería para darle aparencia CSS y el profe dice que prefiere usar id en los formularios porque es más exclusivo-->
+                 <fieldset>
+                    <legend>Ficha Cliente</legend>
+                    <fieldset>
+                        <legend>Datos personales</legend>
+                        Nombre <input type="text" name="nombre" id="caja"  placeholder="Raúl" required>
+                        <br>
+                        Apellido <input type="text" name="apellido" id="caja" placeholder="Eje:Rodríguez" required>
+                        <br>
+                        Edad: <input type="number" name="edad" id="caj" min="18" max="90">
+                        <br>
+                        Fecha nacimiento <input type="date" name="caja" id="calendario">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Contacto Cliente</legend>
+                        Mail: <input type="email" name="email" id="caja" >
+                        <br>
+                        Password <input type="password" name="password" id="caja">
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Combustión coche</legend>
+                        <input type="radio" name="coche" value="diesel" id="caja">diesel
+                        <br>
+                        <input type="radio" name="coche" value="gasolina" id="caja">gasolina
+                        <br>
+                        <input type="radio" name="coche" value="eléctrico" id="caja">eléctrico
+                        <br>
+                        <input type="radio" name="coche" value="híbrido" id="caja">híbrido
+                        <br>
+                        <fieldset>
+                        <legend>Tipo de vehículo</legend>
+                            Seleccione vehículo: 
+                            <select name="transporte" id="">
+                                <option value="1">Coche</option>
+                                <option value="2">Camión</option>
+                                <option value="3">Autobús</option>
+                                <option value="4">Moto</option>
+                            </select>
+                        </fieldset>
+                    </fieldset>
+                    <br>
+                    <input type="submit" value="Registrar cliente">
+                    <input type="reset" value="Borrar registro">
+                 </fieldset>
+        </form>
+        <br>
+        <br>
+        <img class="vengadores" src="logos/Symbol_from_Marvel's.png" alt="">
 
-        </table>
 </body>
 </html>

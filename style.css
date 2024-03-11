@@ -4,8 +4,14 @@
 }
 body{
     text-align: center; 
-    /*Para alinaer elementos*/
-    background-color: brown;
+    /*Para alinaer elementos
+    background-color: brown;*/
+    background-image: url(logos/marvel-avengers-i106157.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+/*Esto sirve para fijar bien la foto de fondo y que ocupe toda la pantalla*/
 }
 h1{
     font-size: 48px;
@@ -15,13 +21,14 @@ h1{
 }
 table{
     border:1px solid gold;
+    border-collapse: collapse;
     width:"770px";
     height:"440px";
     margin: auto;
     /*Para alinear y centrar la tabla*/
 }
 td{
-    border: 1px solid gold;
+    border: 3px solid gold;
     width: 100px;
     height: 100px;
     font-family: "tebeo";
@@ -51,3 +58,24 @@ le añada los de la clase texto*/
     color: blueviolet;
  }
  /*Con la etiqueta span podemos cambiar el aspecto de la tipografia que decidamos*/
+
+ form{
+   text-align: center;
+   margin:auto;
+    width: 760px;
+    height:505px;
+    /*El profe dice de ponerlo con table, pero nose porque a mi no me lo cojo si pongo las etiquetas juntas*/
+ }
+ #formulario,fieldset{
+    background-color: aquamarine;
+    font-family: "tebeo";
+    border-radius: 15px;
+ }
+ .vengadores{
+    width: 200px;
+    height: 200px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: blue red green yellow;
+    border-radius: 180px;
+ }
