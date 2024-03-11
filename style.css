@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "tebeo";
+    src: url(font/marvel.ttf);
+}
+body{
+    text-align: center; 
+    /*Para alinaer elementos*/
+    background-color: brown;
+}
+h1{
+    font-size: 48px;
+    color: aliceblue;
+    font-family: "tebeo";
+
+}
+table{
+    border:1px solid gold;
+    width:"770px";
+    height:"440px";
+    margin: auto;
+    /*Para alinear y centrar la tabla*/
+}
+td{
+    border: 1px solid gold;
+    width: 100px;
+    height: 100px;
+    font-family: "tebeo";
+}
+.imagen{
+    width: 100%;
+    height: 100%;
+}
+.fondo{
+    background-color: lightseagreen;
+    font-size: 22px;
+    color: whitesmoke;
+    /*Si usásemos un id en vez de una clase para los
+ td, no podríamos usar un id con el mismo nombre para el H1*/
+}
+.texto{
+    background-color: grey;
+    font-size: 42px;
+}
+/*EL profe dentro de una clase: class="fondo", ha puesto: class="fonde texto"
+para indicar que coja los atributos de la clase fondo pero al mismo tiempo
+le añada los de la clase texto*/
+ #relleno{
+    background-color: gold;
+ }
+ span{
+    color: blueviolet;
+ }
+ /*Con la etiqueta span podemos cambiar el aspecto de la tipografia que decidamos*/
